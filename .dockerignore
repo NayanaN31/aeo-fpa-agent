@@ -1,0 +1,9 @@
+node_modules
+dist
+__pycache__
+*.pyc
+*.pyo
+.env
+.session_history.json
+backtest_results.json
+.git

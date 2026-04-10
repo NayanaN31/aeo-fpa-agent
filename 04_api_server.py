@@ -28,9 +28,12 @@ import openai
 from dotenv import find_dotenv, load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.routing import APIRouter
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-_REPO_ROOT = Path(__file__).resolve().parent.parent
+_REPO_ROOT = Path(__file__).resolve().parent
 load_dotenv(_REPO_ROOT / ".env")
 load_dotenv(find_dotenv())
 
@@ -57,10 +60,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# All API routes live on this router so they can be mounted at both
+# "/" (local dev — Vite proxy strips /api) and "/api" (production)
+router = APIRouter()
+
 agent = FPAAgent()
 
 # ── Session persistence ───────────────────────────────────────────────────
-SESSION_PATH = Path(__file__).resolve().parent.parent / "data" / ".session_history.json"
+SESSION_PATH = Path(__file__).resolve().parent / ".session_history.json"
 
 
 def _save_session():
@@ -386,12 +393,12 @@ class ChatResponse(BaseModel):
 
 # ── Routes ───────────────────────────────────────────────────────────────────
 
-@app.get("/health")
+@router.get("/health")
 def health():
     return {"status": "ok"}
 
 
-@app.get("/forecast-backtest")
+@router.get("/forecast-backtest")
 def forecast_backtest_default(
     years_out: int = 2,
     exclude_covid: bool = True,
@@ -660,7 +667,7 @@ def _generate_summary() -> str:
         return _fallback_summary_text()
 
 
-@app.get("/summary")
+@router.get("/summary")
 def get_summary():
     """Return executive briefing + data-driven insights + pre-computed suggestions."""
     if _summary_cache["dirty"] or not _summary_cache["text"]:
@@ -678,7 +685,7 @@ def get_summary():
     }
 
 
-@app.post("/chat", response_model=ChatResponse)
+@router.post("/chat", response_model=ChatResponse)
 def chat(req: ChatRequest):
     message = req.message.strip()
     if not message:
@@ -719,25 +726,25 @@ def chat(req: ChatRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.get("/peers")
+@router.get("/peers")
 def get_peers():
     """Return peer financial data for dashboard charts."""
     return {"peers": agent.peer_records}
 
 
-@app.get("/segments")
+@router.get("/segments")
 def get_segments():
     """Return AE brand vs Aerie brand segment breakdown."""
     return {"segments": agent.segment_records}
 
 
-@app.get("/quarterly")
+@router.get("/quarterly")
 def get_quarterly():
     """Return quarterly financial data."""
     return {"quarterly": agent.quarterly_records}
 
 
-@app.get("/history")
+@router.get("/history")
 def get_history():
     """Return saved conversation history for session restore."""
     messages = [
@@ -748,7 +755,7 @@ def get_history():
     return {"messages": messages}
 
 
-@app.post("/reset")
+@router.post("/reset")
 def reset():
     agent.history.clear()
     _summary_cache["dirty"] = True
@@ -757,8 +764,29 @@ def reset():
     return {"status": "reset"}
 
 
-# ── Dev entry point ──────────────────────────────────────────────────────────
+# ── Register routes ───────────────────────────────────────────────────────────
+# Mount at "/" for local dev (Vite proxy strips /api before forwarding)
+# Mount at "/api" for production (React calls /api/* directly against FastAPI)
+app.include_router(router)
+app.include_router(router, prefix="/api")
+
+# ── Serve built React frontend (production) ───────────────────────────────────
+_DIST = _REPO_ROOT / "dist"
+if _DIST.exists():
+    # Serve hashed asset files
+    app.mount("/assets", StaticFiles(directory=_DIST / "assets"), name="assets")
+
+    @app.get("/{full_path:path}", include_in_schema=False)
+    def serve_spa(full_path: str):
+        """Return the requested file if it exists, otherwise serve index.html (SPA routing)."""
+        target = _DIST / full_path
+        if target.exists() and target.is_file():
+            return FileResponse(target)
+        return FileResponse(_DIST / "index.html")
+
+
+# ── Entry point ───────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn
-    # 0.0.0.0 so the browser can reach the API via 127.0.0.1, localhost, or your LAN IP
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)

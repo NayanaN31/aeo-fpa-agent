@@ -18,7 +18,7 @@ from pathlib import Path
 
 from dotenv import find_dotenv, load_dotenv
 
-_REPO_ROOT = Path(__file__).resolve().parent.parent
+_REPO_ROOT = Path(__file__).resolve().parent
 load_dotenv(_REPO_ROOT / ".env")
 load_dotenv(find_dotenv())
 
@@ -27,11 +27,11 @@ import openai
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-FINANCIALS_PATH = _REPO_ROOT / "data/processed/aeo_financials.json"
-QUARTERLY_PATH  = _REPO_ROOT / "data/processed/aeo_quarterly.json"
-SEGMENTS_PATH   = _REPO_ROOT / "data/processed/aeo_segments.json"
-PEERS_PATH      = _REPO_ROOT / "data/processed/peers.json"
-MDA_PATH        = _REPO_ROOT / "data/processed/mda_summaries.json"
+FINANCIALS_PATH = _REPO_ROOT / "aeo_financials.json"
+QUARTERLY_PATH  = _REPO_ROOT / "aeo_quarterly.json"
+SEGMENTS_PATH   = _REPO_ROOT / "aeo_segments.json"
+PEERS_PATH      = _REPO_ROOT / "peers.json"
+MDA_PATH        = _REPO_ROOT / "mda_summaries.json"
 PROMPTS_DIR     = _REPO_ROOT / "prompts"
 
 MODEL      = "gpt-4o"
@@ -1488,7 +1488,7 @@ def run_eval_mode():
         print(f"  Avg OI MAPE:           {agg_oi_mape:.1f}%")
     print(f"{'='*60}")
 
-    eval_path = _REPO_ROOT / "eval/backtest_results.json"
+    eval_path = _REPO_ROOT / "backtest_results.json"
     eval_path.parent.mkdir(exist_ok=True)
     with open(eval_path, "w") as f:
         json.dump(saved, f, indent=2)
