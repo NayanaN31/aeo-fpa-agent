@@ -1,0 +1,811 @@
+{
+  "windows": [
+    {
+      "label": "window_A_2015_2020",
+      "desc": "Train FY2015\u20132020, test FY2021\u20132023",
+      "standard": {
+        "summary": {
+          "avg_mape": 18.2,
+          "directional_accuracy": 100.0
+        },
+        "results": [
+          {
+            "window": "window_A_2015_2020_std",
+            "fiscal_year": 2021,
+            "scenario": "base",
+            "predicted_000s": 4100872.0,
+            "actual_000s": 5010785.0,
+            "mape_pct": 18.16,
+            "direction_correct": true,
+            "gm_error_pp": 4.92,
+            "oi_mape_pct": 75.02,
+            "sga_mape_pct": 13.63
+          },
+          {
+            "window": "window_A_2015_2020_std",
+            "fiscal_year": 2022,
+            "scenario": "base",
+            "predicted_000s": 4173142.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 16.37,
+            "direction_correct": true,
+            "gm_error_pp": 0.15,
+            "oi_mape_pct": 39.19,
+            "sga_mape_pct": 10.18
+          },
+          {
+            "window": "window_A_2015_2020_std",
+            "fiscal_year": 2023,
+            "scenario": "base",
+            "predicted_000s": 4245411.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 19.32,
+            "direction_correct": true,
+            "gm_error_pp": 3.65,
+            "oi_mape_pct": 31.38,
+            "sga_mape_pct": 14.11
+          },
+          {
+            "window": "window_A_2015_2020_std",
+            "fiscal_year": 2021,
+            "scenario": "bull",
+            "predicted_000s": 4162385.0,
+            "actual_000s": 5010785.0,
+            "mape_pct": 16.93,
+            "direction_correct": true,
+            "gm_error_pp": 4.62,
+            "oi_mape_pct": 71.13,
+            "sga_mape_pct": 13.63
+          },
+          {
+            "window": "window_A_2015_2020_std",
+            "fiscal_year": 2022,
+            "scenario": "bull",
+            "predicted_000s": 4299275.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 13.84,
+            "direction_correct": true,
+            "gm_error_pp": 0.15,
+            "oi_mape_pct": 28.65,
+            "sga_mape_pct": 10.18
+          },
+          {
+            "window": "window_A_2015_2020_std",
+            "fiscal_year": 2023,
+            "scenario": "bull",
+            "predicted_000s": 4439334.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 15.63,
+            "direction_correct": true,
+            "gm_error_pp": 3.35,
+            "oi_mape_pct": 18.28,
+            "sga_mape_pct": 14.11
+          },
+          {
+            "window": "window_A_2015_2020_std",
+            "fiscal_year": 2021,
+            "scenario": "bear",
+            "predicted_000s": 4018855.0,
+            "actual_000s": 5010785.0,
+            "mape_pct": 19.8,
+            "direction_correct": true,
+            "gm_error_pp": 5.42,
+            "oi_mape_pct": 82.32,
+            "sga_mape_pct": 13.63
+          },
+          {
+            "window": "window_A_2015_2020_std",
+            "fiscal_year": 2022,
+            "scenario": "bear",
+            "predicted_000s": 4007885.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 19.68,
+            "direction_correct": true,
+            "gm_error_pp": 0.65,
+            "oi_mape_pct": 57.82,
+            "sga_mape_pct": 10.18
+          },
+          {
+            "window": "window_A_2015_2020_std",
+            "fiscal_year": 2023,
+            "scenario": "bear",
+            "predicted_000s": 3995747.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 24.06,
+            "direction_correct": true,
+            "gm_error_pp": 4.15,
+            "oi_mape_pct": 53.35,
+            "sga_mape_pct": 14.11
+          }
+        ]
+      },
+      "covid_excluded": {
+        "summary": {
+          "avg_mape": 5.83,
+          "directional_accuracy": 100.0
+        },
+        "results": [
+          {
+            "window": "window_A_2015_2020_excl",
+            "fiscal_year": 2021,
+            "scenario": "base",
+            "predicted_000s": 4688722.0,
+            "actual_000s": 5010785.0,
+            "mape_pct": 6.43,
+            "direction_correct": true,
+            "gm_error_pp": 3.32,
+            "oi_mape_pct": 39.53,
+            "sga_mape_pct": 13.63
+          },
+          {
+            "window": "window_A_2015_2020_excl",
+            "fiscal_year": 2022,
+            "scenario": "base",
+            "predicted_000s": 4886847.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 2.06,
+            "direction_correct": true,
+            "gm_error_pp": 1.45,
+            "oi_mape_pct": 50.8,
+            "sga_mape_pct": 10.18
+          },
+          {
+            "window": "window_A_2015_2020_excl",
+            "fiscal_year": 2023,
+            "scenario": "base",
+            "predicted_000s": 4886847.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 7.13,
+            "direction_correct": true,
+            "gm_error_pp": 2.05,
+            "oi_mape_pct": 67.27,
+            "sga_mape_pct": 14.11
+          },
+          {
+            "window": "window_A_2015_2020_excl",
+            "fiscal_year": 2021,
+            "scenario": "bull",
+            "predicted_000s": 4759053.0,
+            "actual_000s": 5010785.0,
+            "mape_pct": 5.02,
+            "direction_correct": true,
+            "gm_error_pp": 3.02,
+            "oi_mape_pct": 34.59,
+            "sga_mape_pct": 13.63
+          },
+          {
+            "window": "window_A_2015_2020_excl",
+            "fiscal_year": 2022,
+            "scenario": "bull",
+            "predicted_000s": 4886847.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 2.06,
+            "direction_correct": true,
+            "gm_error_pp": 1.75,
+            "oi_mape_pct": 60.69,
+            "sga_mape_pct": 10.18
+          },
+          {
+            "window": "window_A_2015_2020_excl",
+            "fiscal_year": 2023,
+            "scenario": "bull",
+            "predicted_000s": 4886847.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 7.13,
+            "direction_correct": true,
+            "gm_error_pp": 1.75,
+            "oi_mape_pct": 78.24,
+            "sga_mape_pct": 14.11
+          },
+          {
+            "window": "window_A_2015_2020_excl",
+            "fiscal_year": 2021,
+            "scenario": "bear",
+            "predicted_000s": 4594948.0,
+            "actual_000s": 5010785.0,
+            "mape_pct": 8.3,
+            "direction_correct": true,
+            "gm_error_pp": 3.82,
+            "oi_mape_pct": 48.51,
+            "sga_mape_pct": 13.63
+          },
+          {
+            "window": "window_A_2015_2020_excl",
+            "fiscal_year": 2022,
+            "scenario": "bear",
+            "predicted_000s": 4703897.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 5.73,
+            "direction_correct": true,
+            "gm_error_pp": 0.95,
+            "oi_mape_pct": 26.11,
+            "sga_mape_pct": 10.18
+          },
+          {
+            "window": "window_A_2015_2020_excl",
+            "fiscal_year": 2023,
+            "scenario": "bear",
+            "predicted_000s": 4806650.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 8.65,
+            "direction_correct": true,
+            "gm_error_pp": 2.55,
+            "oi_mape_pct": 42.94,
+            "sga_mape_pct": 14.11
+          }
+        ]
+      }
+    },
+    {
+      "label": "window_B_2015_2021",
+      "desc": "Train FY2015\u20132021, test FY2022\u20132023",
+      "standard": {
+        "summary": {
+          "avg_mape": 3.72,
+          "directional_accuracy": 83.3
+        },
+        "results": [
+          {
+            "window": "window_B_2015_2021_std",
+            "fiscal_year": 2022,
+            "scenario": "base",
+            "predicted_000s": 4840557.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 2.99,
+            "direction_correct": true,
+            "gm_error_pp": 1.1,
+            "oi_mape_pct": 11.2,
+            "sga_mape_pct": 3.99
+          },
+          {
+            "window": "window_B_2015_2021_std",
+            "fiscal_year": 2023,
+            "scenario": "base",
+            "predicted_000s": 5051936.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 3.99,
+            "direction_correct": true,
+            "gm_error_pp": 2.4,
+            "oi_mape_pct": 28.73,
+            "sga_mape_pct": 0.56
+          },
+          {
+            "window": "window_B_2015_2021_std",
+            "fiscal_year": 2022,
+            "scenario": "bull",
+            "predicted_000s": 4913166.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 1.54,
+            "direction_correct": true,
+            "gm_error_pp": 1.4,
+            "oi_mape_pct": 22.81,
+            "sga_mape_pct": 3.99
+          },
+          {
+            "window": "window_B_2015_2021_std",
+            "fiscal_year": 2023,
+            "scenario": "bull",
+            "predicted_000s": 5204631.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 1.09,
+            "direction_correct": true,
+            "gm_error_pp": 2.1,
+            "oi_mape_pct": 44.31,
+            "sga_mape_pct": 0.56
+          },
+          {
+            "window": "window_B_2015_2021_std",
+            "fiscal_year": 2022,
+            "scenario": "bear",
+            "predicted_000s": 4743746.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 4.93,
+            "direction_correct": true,
+            "gm_error_pp": 0.6,
+            "oi_mape_pct": 10.23,
+            "sga_mape_pct": 3.99
+          },
+          {
+            "window": "window_B_2015_2021_std",
+            "fiscal_year": 2023,
+            "scenario": "bear",
+            "predicted_000s": 4851879.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 7.79,
+            "direction_correct": false,
+            "gm_error_pp": 2.9,
+            "oi_mape_pct": 1.85,
+            "sga_mape_pct": 0.56
+          }
+        ]
+      },
+      "covid_excluded": {
+        "summary": {
+          "avg_mape": 3.82,
+          "directional_accuracy": 50.0
+        },
+        "results": [
+          {
+            "window": "window_B_2015_2021_excl",
+            "fiscal_year": 2022,
+            "scenario": "base",
+            "predicted_000s": 5195556.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 4.12,
+            "direction_correct": false,
+            "gm_error_pp": 2.35,
+            "oi_mape_pct": 84.13,
+            "sga_mape_pct": 3.99
+          },
+          {
+            "window": "window_B_2015_2021_excl",
+            "fiscal_year": 2023,
+            "scenario": "base",
+            "predicted_000s": 5463176.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 3.83,
+            "direction_correct": true,
+            "gm_error_pp": 1.15,
+            "oi_mape_pct": 114.77,
+            "sga_mape_pct": 0.56
+          },
+          {
+            "window": "window_B_2015_2021_excl",
+            "fiscal_year": 2022,
+            "scenario": "bull",
+            "predicted_000s": 5273489.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 5.68,
+            "direction_correct": false,
+            "gm_error_pp": 2.65,
+            "oi_mape_pct": 97.57,
+            "sga_mape_pct": 3.99
+          },
+          {
+            "window": "window_B_2015_2021_excl",
+            "fiscal_year": 2023,
+            "scenario": "bull",
+            "predicted_000s": 5628301.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 6.97,
+            "direction_correct": true,
+            "gm_error_pp": 0.85,
+            "oi_mape_pct": 133.89,
+            "sga_mape_pct": 0.56
+          },
+          {
+            "window": "window_B_2015_2021_excl",
+            "fiscal_year": 2022,
+            "scenario": "bear",
+            "predicted_000s": 5091645.0,
+            "actual_000s": 4989833.0,
+            "mape_pct": 2.04,
+            "direction_correct": false,
+            "gm_error_pp": 1.85,
+            "oi_mape_pct": 59.84,
+            "sga_mape_pct": 3.99
+          },
+          {
+            "window": "window_B_2015_2021_excl",
+            "fiscal_year": 2023,
+            "scenario": "bear",
+            "predicted_000s": 5246834.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 0.28,
+            "direction_correct": true,
+            "gm_error_pp": 1.65,
+            "oi_mape_pct": 82.7,
+            "sga_mape_pct": 0.56
+          }
+        ]
+      }
+    },
+    {
+      "label": "window_C_2015_2022",
+      "desc": "Train FY2015\u20132022, test FY2023\u20132024",
+      "standard": {
+        "summary": {
+          "avg_mape": 2.47,
+          "directional_accuracy": 100.0
+        },
+        "results": [
+          {
+            "window": "window_C_2015_2022_std",
+            "fiscal_year": 2023,
+            "scenario": "base",
+            "predicted_000s": 5152315.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 2.08,
+            "direction_correct": true,
+            "gm_error_pp": 2.67,
+            "oi_mape_pct": 27.26,
+            "sga_mape_pct": 4.37
+          },
+          {
+            "window": "window_C_2015_2022_std",
+            "fiscal_year": 2024,
+            "scenario": "base",
+            "predicted_000s": 5382737.0,
+            "actual_000s": 5328652.0,
+            "mape_pct": 1.01,
+            "direction_correct": true,
+            "gm_error_pp": 3.39,
+            "oi_mape_pct": 30.71,
+            "sga_mape_pct": 3.38
+          },
+          {
+            "window": "window_C_2015_2022_std",
+            "fiscal_year": 2023,
+            "scenario": "bull",
+            "predicted_000s": 5229600.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 0.61,
+            "direction_correct": true,
+            "gm_error_pp": 2.37,
+            "oi_mape_pct": 40.91,
+            "sga_mape_pct": 4.37
+          },
+          {
+            "window": "window_C_2015_2022_std",
+            "fiscal_year": 2024,
+            "scenario": "bull",
+            "predicted_000s": 5545431.0,
+            "actual_000s": 5328652.0,
+            "mape_pct": 4.07,
+            "direction_correct": true,
+            "gm_error_pp": 3.09,
+            "oi_mape_pct": 22.12,
+            "sga_mape_pct": 3.38
+          },
+          {
+            "window": "window_C_2015_2022_std",
+            "fiscal_year": 2023,
+            "scenario": "bear",
+            "predicted_000s": 5049269.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 4.04,
+            "direction_correct": true,
+            "gm_error_pp": 3.17,
+            "oi_mape_pct": 2.04,
+            "sga_mape_pct": 4.37
+          },
+          {
+            "window": "window_C_2015_2022_std",
+            "fiscal_year": 2024,
+            "scenario": "bear",
+            "predicted_000s": 5169581.0,
+            "actual_000s": 5328652.0,
+            "mape_pct": 2.99,
+            "direction_correct": true,
+            "gm_error_pp": 3.89,
+            "oi_mape_pct": 45.55,
+            "sga_mape_pct": 3.38
+          }
+        ]
+      },
+      "covid_excluded": {
+        "summary": {
+          "avg_mape": 2.73,
+          "directional_accuracy": 100.0
+        },
+        "results": [
+          {
+            "window": "window_C_2015_2022_excl",
+            "fiscal_year": 2023,
+            "scenario": "base",
+            "predicted_000s": 5314557.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 1.0,
+            "direction_correct": true,
+            "gm_error_pp": 1.74,
+            "oi_mape_pct": 85.94,
+            "sga_mape_pct": 4.37
+          },
+          {
+            "window": "window_C_2015_2022_excl",
+            "fiscal_year": 2024,
+            "scenario": "base",
+            "predicted_000s": 5555988.0,
+            "actual_000s": 5328652.0,
+            "mape_pct": 4.27,
+            "direction_correct": true,
+            "gm_error_pp": 2.46,
+            "oi_mape_pct": 1.32,
+            "sga_mape_pct": 3.38
+          },
+          {
+            "window": "window_C_2015_2022_excl",
+            "fiscal_year": 2023,
+            "scenario": "bull",
+            "predicted_000s": 5394275.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 2.52,
+            "direction_correct": true,
+            "gm_error_pp": 1.44,
+            "oi_mape_pct": 100.84,
+            "sga_mape_pct": 4.37
+          },
+          {
+            "window": "window_C_2015_2022_excl",
+            "fiscal_year": 2024,
+            "scenario": "bull",
+            "predicted_000s": 5723918.0,
+            "actual_000s": 5328652.0,
+            "mape_pct": 7.42,
+            "direction_correct": true,
+            "gm_error_pp": 2.16,
+            "oi_mape_pct": 11.08,
+            "sga_mape_pct": 3.38
+          },
+          {
+            "window": "window_C_2015_2022_excl",
+            "fiscal_year": 2023,
+            "scenario": "bear",
+            "predicted_000s": 5208266.0,
+            "actual_000s": 5261770.0,
+            "mape_pct": 1.02,
+            "direction_correct": true,
+            "gm_error_pp": 2.24,
+            "oi_mape_pct": 58.84,
+            "sga_mape_pct": 4.37
+          },
+          {
+            "window": "window_C_2015_2022_excl",
+            "fiscal_year": 2024,
+            "scenario": "bear",
+            "predicted_000s": 5335971.0,
+            "actual_000s": 5328652.0,
+            "mape_pct": 0.14,
+            "direction_correct": true,
+            "gm_error_pp": 2.96,
+            "oi_mape_pct": 15.18,
+            "sga_mape_pct": 3.38
+          }
+        ]
+      }
+    }
+  ],
+  "aggregate": {
+    "model": "component_pnl_forecast",
+    "method": "Rev=weighted_regression, GM%=weighted_avg, SGA=regression, OI=residual",
+    "alpha": 0.8,
+    "avg_mape_covid_excl": 4.13,
+    "directional_accuracy_covid_excl": 83.3,
+    "avg_gm_error_pp": 2.07,
+    "avg_oi_mape_pct": 63.39,
+    "windows_evaluated": 3,
+    "note": "COVID FY2020 excluded from training; component P&L build-up for OI accuracy"
+  },
+  "standard": {
+    "summary": {
+      "avg_mape": 18.2,
+      "directional_accuracy": 100.0
+    },
+    "results": [
+      {
+        "window": "window_A_2015_2020_std",
+        "fiscal_year": 2021,
+        "scenario": "base",
+        "predicted_000s": 4100872.0,
+        "actual_000s": 5010785.0,
+        "mape_pct": 18.16,
+        "direction_correct": true,
+        "gm_error_pp": 4.92,
+        "oi_mape_pct": 75.02,
+        "sga_mape_pct": 13.63
+      },
+      {
+        "window": "window_A_2015_2020_std",
+        "fiscal_year": 2022,
+        "scenario": "base",
+        "predicted_000s": 4173142.0,
+        "actual_000s": 4989833.0,
+        "mape_pct": 16.37,
+        "direction_correct": true,
+        "gm_error_pp": 0.15,
+        "oi_mape_pct": 39.19,
+        "sga_mape_pct": 10.18
+      },
+      {
+        "window": "window_A_2015_2020_std",
+        "fiscal_year": 2023,
+        "scenario": "base",
+        "predicted_000s": 4245411.0,
+        "actual_000s": 5261770.0,
+        "mape_pct": 19.32,
+        "direction_correct": true,
+        "gm_error_pp": 3.65,
+        "oi_mape_pct": 31.38,
+        "sga_mape_pct": 14.11
+      },
+      {
+        "window": "window_A_2015_2020_std",
+        "fiscal_year": 2021,
+        "scenario": "bull",
+        "predicted_000s": 4162385.0,
+        "actual_000s": 5010785.0,
+        "mape_pct": 16.93,
+        "direction_correct": true,
+        "gm_error_pp": 4.62,
+        "oi_mape_pct": 71.13,
+        "sga_mape_pct": 13.63
+      },
+      {
+        "window": "window_A_2015_2020_std",
+        "fiscal_year": 2022,
+        "scenario": "bull",
+        "predicted_000s": 4299275.0,
+        "actual_000s": 4989833.0,
+        "mape_pct": 13.84,
+        "direction_correct": true,
+        "gm_error_pp": 0.15,
+        "oi_mape_pct": 28.65,
+        "sga_mape_pct": 10.18
+      },
+      {
+        "window": "window_A_2015_2020_std",
+        "fiscal_year": 2023,
+        "scenario": "bull",
+        "predicted_000s": 4439334.0,
+        "actual_000s": 5261770.0,
+        "mape_pct": 15.63,
+        "direction_correct": true,
+        "gm_error_pp": 3.35,
+        "oi_mape_pct": 18.28,
+        "sga_mape_pct": 14.11
+      },
+      {
+        "window": "window_A_2015_2020_std",
+        "fiscal_year": 2021,
+        "scenario": "bear",
+        "predicted_000s": 4018855.0,
+        "actual_000s": 5010785.0,
+        "mape_pct": 19.8,
+        "direction_correct": true,
+        "gm_error_pp": 5.42,
+        "oi_mape_pct": 82.32,
+        "sga_mape_pct": 13.63
+      },
+      {
+        "window": "window_A_2015_2020_std",
+        "fiscal_year": 2022,
+        "scenario": "bear",
+        "predicted_000s": 4007885.0,
+        "actual_000s": 4989833.0,
+        "mape_pct": 19.68,
+        "direction_correct": true,
+        "gm_error_pp": 0.65,
+        "oi_mape_pct": 57.82,
+        "sga_mape_pct": 10.18
+      },
+      {
+        "window": "window_A_2015_2020_std",
+        "fiscal_year": 2023,
+        "scenario": "bear",
+        "predicted_000s": 3995747.0,
+        "actual_000s": 5261770.0,
+        "mape_pct": 24.06,
+        "direction_correct": true,
+        "gm_error_pp": 4.15,
+        "oi_mape_pct": 53.35,
+        "sga_mape_pct": 14.11
+      }
+    ]
+  },
+  "covid_excluded": {
+    "summary": {
+      "avg_mape": 5.83,
+      "directional_accuracy": 100.0
+    },
+    "results": [
+      {
+        "window": "window_A_2015_2020_excl",
+        "fiscal_year": 2021,
+        "scenario": "base",
+        "predicted_000s": 4688722.0,
+        "actual_000s": 5010785.0,
+        "mape_pct": 6.43,
+        "direction_correct": true,
+        "gm_error_pp": 3.32,
+        "oi_mape_pct": 39.53,
+        "sga_mape_pct": 13.63
+      },
+      {
+        "window": "window_A_2015_2020_excl",
+        "fiscal_year": 2022,
+        "scenario": "base",
+        "predicted_000s": 4886847.0,
+        "actual_000s": 4989833.0,
+        "mape_pct": 2.06,
+        "direction_correct": true,
+        "gm_error_pp": 1.45,
+        "oi_mape_pct": 50.8,
+        "sga_mape_pct": 10.18
+      },
+      {
+        "window": "window_A_2015_2020_excl",
+        "fiscal_year": 2023,
+        "scenario": "base",
+        "predicted_000s": 4886847.0,
+        "actual_000s": 5261770.0,
+        "mape_pct": 7.13,
+        "direction_correct": true,
+        "gm_error_pp": 2.05,
+        "oi_mape_pct": 67.27,
+        "sga_mape_pct": 14.11
+      },
+      {
+        "window": "window_A_2015_2020_excl",
+        "fiscal_year": 2021,
+        "scenario": "bull",
+        "predicted_000s": 4759053.0,
+        "actual_000s": 5010785.0,
+        "mape_pct": 5.02,
+        "direction_correct": true,
+        "gm_error_pp": 3.02,
+        "oi_mape_pct": 34.59,
+        "sga_mape_pct": 13.63
+      },
+      {
+        "window": "window_A_2015_2020_excl",
+        "fiscal_year": 2022,
+        "scenario": "bull",
+        "predicted_000s": 4886847.0,
+        "actual_000s": 4989833.0,
+        "mape_pct": 2.06,
+        "direction_correct": true,
+        "gm_error_pp": 1.75,
+        "oi_mape_pct": 60.69,
+        "sga_mape_pct": 10.18
+      },
+      {
+        "window": "window_A_2015_2020_excl",
+        "fiscal_year": 2023,
+        "scenario": "bull",
+        "predicted_000s": 4886847.0,
+        "actual_000s": 5261770.0,
+        "mape_pct": 7.13,
+        "direction_correct": true,
+        "gm_error_pp": 1.75,
+        "oi_mape_pct": 78.24,
+        "sga_mape_pct": 14.11
+      },
+      {
+        "window": "window_A_2015_2020_excl",
+        "fiscal_year": 2021,
+        "scenario": "bear",
+        "predicted_000s": 4594948.0,
+        "actual_000s": 5010785.0,
+        "mape_pct": 8.3,
+        "direction_correct": true,
+        "gm_error_pp": 3.82,
+        "oi_mape_pct": 48.51,
+        "sga_mape_pct": 13.63
+      },
+      {
+        "window": "window_A_2015_2020_excl",
+        "fiscal_year": 2022,
+        "scenario": "bear",
+        "predicted_000s": 4703897.0,
+        "actual_000s": 4989833.0,
+        "mape_pct": 5.73,
+        "direction_correct": true,
+        "gm_error_pp": 0.95,
+        "oi_mape_pct": 26.11,
+        "sga_mape_pct": 10.18
+      },
+      {
+        "window": "window_A_2015_2020_excl",
+        "fiscal_year": 2023,
+        "scenario": "bear",
+        "predicted_000s": 4806650.0,
+        "actual_000s": 5261770.0,
+        "mape_pct": 8.65,
+        "direction_correct": true,
+        "gm_error_pp": 2.55,
+        "oi_mape_pct": 42.94,
+        "sga_mape_pct": 14.11
+      }
+    ]
+  }
+}

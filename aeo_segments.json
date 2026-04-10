@@ -1,0 +1,79 @@
+[
+  {
+    "label": "FY2018",
+    "aerie_revenue": 627846.0,
+    "ae_revenue": 3387754.0,
+    "aerie_oi": null,
+    "ae_oi": null,
+    "aerie_share_pct": 15.6,
+    "aerie_oi_margin_pct": null,
+    "ae_oi_margin_pct": null,
+    "units": "thousands_usd"
+  },
+  {
+    "label": "FY2019",
+    "aerie_revenue": 801035.0,
+    "ae_revenue": 3479592.0,
+    "aerie_oi": null,
+    "ae_oi": null,
+    "aerie_share_pct": 18.7,
+    "aerie_oi_margin_pct": null,
+    "ae_oi_margin_pct": null,
+    "units": "thousands_usd"
+  },
+  {
+    "label": "FY2020",
+    "aerie_revenue": 989989.0,
+    "ae_revenue": 2733849.0,
+    "aerie_oi": null,
+    "ae_oi": null,
+    "aerie_share_pct": 26.6,
+    "aerie_oi_margin_pct": null,
+    "ae_oi_margin_pct": null,
+    "units": "thousands_usd"
+  },
+  {
+    "label": "FY2021",
+    "aerie_revenue": 1376269.0,
+    "ae_revenue": 3555706.0,
+    "aerie_oi": null,
+    "ae_oi": null,
+    "aerie_share_pct": 27.9,
+    "aerie_oi_margin_pct": null,
+    "ae_oi_margin_pct": null,
+    "units": "thousands_usd"
+  },
+  {
+    "label": "FY2022",
+    "aerie_revenue": 1506798.0,
+    "ae_revenue": 3262893.0,
+    "aerie_oi": 167467.0,
+    "ae_oi": 541406.0,
+    "aerie_share_pct": 31.6,
+    "aerie_oi_margin_pct": 11.1,
+    "ae_oi_margin_pct": 16.6,
+    "units": "thousands_usd"
+  },
+  {
+    "label": "FY2023",
+    "aerie_revenue": 1670000.0,
+    "ae_revenue": 3361579.0,
+    "aerie_oi": 275862.0,
+    "ae_oi": 599796.0,
+    "aerie_share_pct": 33.2,
+    "aerie_oi_margin_pct": 16.5,
+    "ae_oi_margin_pct": 17.8,
+    "units": "thousands_usd"
+  },
+  {
+    "label": "FY2024",
+    "aerie_revenue": 1738414.0,
+    "ae_revenue": 3385231.0,
+    "aerie_oi": 315845.0,
+    "ae_oi": 606507.0,
+    "aerie_share_pct": 33.9,
+    "aerie_oi_margin_pct": 18.2,
+    "ae_oi_margin_pct": 17.9,
+    "units": "thousands_usd"
+  }
+]
