@@ -1,0 +1,12 @@
+providers = ["python"]
+
+[phases.install]
+cmds = [
+  "pip install --no-cache-dir python-dotenv requests",
+  "pip install --no-cache-dir pydantic==1.10.21",
+  "pip install --no-cache-dir fastapi==0.99.1 uvicorn",
+  "pip install --no-cache-dir openai==1.10.0"
+]
+
+[start]
+cmd = "python 04_api_server.py"
