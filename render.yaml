@@ -3,7 +3,7 @@ services:
     name: aeo-fpa-agent
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python 04_api_server.py
+    startCommand: python3 04_api_server.py
     plan: free
     envVars:
       - key: OPENAI_API_KEY
