@@ -13,10 +13,11 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Install Python dependencies in separate layers to reduce memory pressure
+# Using pydantic v1 (pure Python) to avoid pydantic-core Rust compilation
 RUN pip install --no-cache-dir python-dotenv requests
-RUN pip install --no-cache-dir "pydantic>=2.0.0,<2.12.0"
-RUN pip install --no-cache-dir "fastapi>=0.115.0" "uvicorn>=0.32.0"
-RUN pip install --no-cache-dir "openai>=1.0.0,<2.0.0"
+RUN pip install --no-cache-dir pydantic==1.10.21
+RUN pip install --no-cache-dir fastapi==0.99.1 uvicorn
+RUN pip install --no-cache-dir openai==1.10.0
 
 # Copy Python source and data files
 COPY *.py ./
